@@ -16,7 +16,7 @@ public class GuessNumber {
         
         Scanner input = new Scanner(System.in);
         Random generator = new Random();
-        int inputValue;
+        int inputValue = -1;
         String gameTitle = "<<< Let's Play Guess Number >>>";
 
         System.out.format("%n");
@@ -27,8 +27,13 @@ public class GuessNumber {
         
         do{
             System.out.print("Enter a guessing number between 0 and 100: ");
+
             inputValue = input.nextInt();
-            
+            if(inputValue < 0 || inputValue > 100){
+                System.out.println("Incorrect input.");
+                
+            }
+          
         }while (inputValue < 0 || inputValue > 100);
         
 
@@ -49,8 +54,9 @@ public class GuessNumber {
             do{
                 System.out.print("Enter a guessing number between 0 and 100: ");
                 inputValue = input.nextInt();
-                if(inputValue > 0 || inputValue < 100){
+                if (inputValue < 0 || inputValue > 100){
                     System.out.println("Incorrect input.");
+                    
                 }
             }while (inputValue < 0 || inputValue > 100);
 
@@ -58,7 +64,8 @@ public class GuessNumber {
                 System.out.println("It is correct.  The number is " + randomValue);
             }
         }
-
         input.close();
 	}
 }
+
+
