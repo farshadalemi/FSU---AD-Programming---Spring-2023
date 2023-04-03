@@ -28,6 +28,7 @@ public class GuessNumber {
         do{
             System.out.print("Enter a guessing number between 0 and 100: ");
             inputValue = input.nextInt();
+            
         }while (inputValue < 0 || inputValue > 100);
         
 
@@ -48,6 +49,9 @@ public class GuessNumber {
             do{
                 System.out.print("Enter a guessing number between 0 and 100: ");
                 inputValue = input.nextInt();
+                if(inputValue > 0 || inputValue < 100){
+                    System.out.println("Incorrect input.");
+                }
             }while (inputValue < 0 || inputValue > 100);
 
             if(randomValue == inputValue){
