@@ -7,7 +7,7 @@
  *  
  ***********************************************************/
 
-public class intFloatFormatting {
+ public class intFloatFormatting {
 	public static void main(String[] args) {
 		
 

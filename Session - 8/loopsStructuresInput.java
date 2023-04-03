@@ -4,15 +4,15 @@
  * Date: 3/04/2023
  * Student: Farshad Alemi
  * Description:
- * 
+ *  
  ***********************************************************/
-
 import java.util.Scanner;
 
-public class GuessNumber {
+ public class loopsStructuresInput {
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
+
+        Scanner input = new Scanner(System.in);
 
         int inputValue;
         int checkPoint = 0;
@@ -27,12 +27,6 @@ public class GuessNumber {
         
         System.out.println(checkPoint);
         
-
-        do{
-            System.out.print();
-        }while ();
-
-
         input.close();
 	}
 
