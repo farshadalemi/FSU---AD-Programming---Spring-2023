@@ -8,19 +8,18 @@
  ***********************************************************/
 import java.util.Scanner;
 
- public class verifyingInputs {
+ public class enterYVerifyinInputs {
 	public static void main(String[] args) {
 		
-        double inputValue;
+        String inputValue;
         Scanner input = new Scanner(System.in);
 
         
         do{
-            System.out.print("Enter a positive floating number: ");
-            inputValue = input.nextDouble();
-        } while (inputValue <= 1);
+            System.out.print("Enter (y) to print this message agian >>> ");
+            inputValue = input.next();
+        } while (inputValue.equals("y") || inputValue.equals("Y") || inputValue.equals("Yes") || inputValue.equals("yes") );
         
         input.close();
-        System.out.format("Square root is %.2f%n", Math.sqrt(inputValue));
 	}
 }
