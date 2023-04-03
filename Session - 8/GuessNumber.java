@@ -22,23 +22,39 @@ public class GuessNumber {
         System.out.format("%n");
         System.out.format("%60s%n", gameTitle);
         System.out.format("%n");
+        
 
+        
         do{
             System.out.print("Enter a guessing number between 0 and 100: ");
             inputValue = input.nextInt();
         }while (inputValue < 0 || inputValue > 100);
         
 
-        for(int r = 1; r <= 1; r++){
-            int randomValue = generator.nextInt(100);
-            // System.out.println(randomValue);
+
+        int randomValue = generator.nextInt(100);
+        System.out.println(randomValue);
+
+
+
+        while(randomValue > inputValue || randomValue < inputValue){
+            if(randomValue > inputValue){
+                System.out.println("Your guess is too low.");
+            }
+            else if(randomValue < inputValue){
+                System.out.println("Your guess is too high.");
+            }
+                        
+            do{
+                System.out.print("Enter a guessing number between 0 and 100: ");
+                inputValue = input.nextInt();
+            }while (inputValue < 0 || inputValue > 100);
+
+            if(randomValue == inputValue){
+                System.out.println("It is correct.  The number is " + randomValue);
+            }
         }
 
-
-        
-
-
-        
         input.close();
 	}
 }
