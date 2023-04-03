@@ -9,31 +9,19 @@
 
 import java.util.Scanner;
 
-public class GuessNumber {
+public class guessNumber {
 	public static void main(String[] args) {
-		
-		Scanner input = new Scanner(System.in);
-
+        
+        Scanner input = new Scanner(System.in);
         int inputValue;
-        int checkPoint = 0;
-        System.out.print(" Enter an integer: ");
-        inputValue = input.nextInt();
         
+        // System.out.print("<<< Let's Play Guess Number >>>");
         
-        while (inputValue >= checkPoint){
-            System.out.println(checkPoint);
-            checkPoint++;
-        }
-        
-        System.out.println(checkPoint);
-        
-
         do{
-            System.out.print();
-        }while ();
-
-
+            System.out.print("Enter a guessing number between 0 and 100: ");
+            inputValue = input.nextInt();
+        }while (inputValue < 0);
+        
         input.close();
 	}
-
 }
