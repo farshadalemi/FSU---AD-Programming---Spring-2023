@@ -1,5 +1,5 @@
 /***********************************************************
- * File: Astorology.java
+ * File: GuessNumber.java
  * Instructor: Nguyen Thai
  * Date: 29/03/2023
  * Student: Farshad Alemi
@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-class Astrology {
+public class Astrology {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
