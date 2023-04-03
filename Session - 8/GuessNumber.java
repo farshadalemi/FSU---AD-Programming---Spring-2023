@@ -39,7 +39,7 @@ public class GuessNumber {
 
 
         int randomValue = generator.nextInt(100);
-        System.out.println(randomValue);
+        // System.out.println("Random number is: " + randomValue);
 
 
 
