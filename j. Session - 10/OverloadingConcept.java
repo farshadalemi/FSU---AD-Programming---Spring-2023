@@ -20,5 +20,5 @@ public class OverloadingConcept {
 
 }
 
-// A variable can be define many times if "Type" or "Prameters"
-// are diffrent. It called Overloding 
+/* A variable can be defined many times if "Type" or "Parameters"
+are different. It called Overloading */
