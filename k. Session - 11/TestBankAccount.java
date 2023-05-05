@@ -1,8 +1,8 @@
 /***********************************************************
  * File: TestBankAccount.java
  * Instructor: Nguyen Thai
- * Date:
- * Student:
+ * Date: 5/5/2023
+ * Student: Farshad Alemi
  * Description: Testing BankAccount class.
  ***********************************************************/
 public class TestBankAccount {
