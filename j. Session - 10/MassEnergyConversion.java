@@ -19,8 +19,13 @@ d)	Write a main() method to test the above methods and print the results to the 
     public static void main(String[] args) {
         int m = 1;
         int E = 1000000000;
+<<<<<<< HEAD
         System.out.println(" >> Calculation of energy from given value of mass: " + MassEnergyConversion.energyFromMass(m) + " Joules");
         System.out.println(" >> Calculation of mass from given value of energy: " + MassEnergyConversion.massFromEnergy(E) + " Kilogram");
+=======
+        System.out.println("Calculation of energy from given value of mass: " + MassEnergyConversion.energyFromMass(m) + " Joules");
+        System.out.println("Calculation of mass from given value of energy: " + MassEnergyConversion.massFromEnergy(E) + " Kilogram");
+>>>>>>> 6ff39bcf358b273c11fd7cfa87b1c96d3fcf765c
     }
 
     public static int energyFromMass(int mass_input){
